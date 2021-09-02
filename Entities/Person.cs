@@ -12,12 +12,12 @@ namespace Entities
     {
         public Person()
         {
-            ContactInfos = new Collection<ContactInfo>();
+            //ContactInfos = new Collection<ContactInfo>();
         }
         public Guid Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Company { get; set; }
-        public ICollection<ContactInfo> ContactInfos { get; set; }
+        //public ICollection<ContactInfo> ContactInfos { get; set; }
     }
 }

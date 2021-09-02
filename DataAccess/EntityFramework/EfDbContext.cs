@@ -12,12 +12,18 @@ namespace DataAccess.EntityFramework
 {
     public class EfDbContext:DbContext
     {
+     
+        public EfDbContext(DbContextOptions<EfDbContext> options) : base(options)
+        {
+
+        }
         public EfDbContext()
         {
 
         }
-        public EfDbContext(DbContextOptions<EfDbContext> options) : base(options)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            optionsBuilder.UseNpgsql(@"User ID=postgres;Password=1234;Host=localhost;Port=5432;Database=TelephoneBook;Pooling=true");
 
         }
         public DbSet<ContactInfo> ContactInfos;
@@ -37,6 +43,10 @@ namespace DataAccess.EntityFramework
 
 
         }
+
+
+
+
 
 
     }

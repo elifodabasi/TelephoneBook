@@ -32,7 +32,7 @@ namespace Business.PersonOps
 
         public List<Person> GetAll()
         {
-            return _personDal.GetAll(x => x.Surname == "Bostan");
+            return _personDal.GetAll();
 
                 
         }
