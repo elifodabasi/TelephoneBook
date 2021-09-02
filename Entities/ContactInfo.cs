@@ -1,4 +1,4 @@
-﻿using Entities.Abstract;
+﻿using Core.Entites.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
+    
     public class ContactInfo :IEntity
     {
      

@@ -12,6 +12,10 @@ namespace DataAccess.EntityFramework
 {
     public class EfDbContext:DbContext
     {
+        public EfDbContext()
+        {
+
+        }
         public EfDbContext(DbContextOptions<EfDbContext> options) : base(options)
         {
 
