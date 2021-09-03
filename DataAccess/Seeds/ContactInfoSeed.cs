@@ -29,7 +29,7 @@ namespace DataAccess.Seeds
              InfoContext = "Bilgi",
              PersonId= _Ids[0],
           }
-         );;
+         );
         }
     }
 }

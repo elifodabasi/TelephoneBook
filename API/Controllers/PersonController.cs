@@ -20,20 +20,36 @@ namespace API.Controllers
         }
 
         [HttpPost("add")]
-        public void Add(Person person)
+        public async Task Add(Person person)
         {
             _personService.Add(person);
         }
         
        
         [HttpGet("getAll")]
-        public List<Person> GetAll()
+        public async Task<List<Person>> GetAll()
         {
             var result = _personService.GetAll();
             return result;
         }
 
+        [HttpPost("update")]
+        public async Task Update(Person person)
+        {
+            _personService.Update(person);
+        }
 
+        [HttpGet("find")]
+        public Person Find(Guid id)
+        {
+            return _personService.Find(id);
+        }
+
+        [HttpPost("delete")]
+        public async Task Delete(Person person)
+        {
+            _personService.Delete(person);
+        }
 
     }
 }

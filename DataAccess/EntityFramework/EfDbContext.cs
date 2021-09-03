@@ -23,7 +23,7 @@ namespace DataAccess.EntityFramework
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql(@"User ID=postgres;Password=1234;Host=localhost;Port=5432;Database=TelephoneBook;Pooling=true");
+            optionsBuilder.UseNpgsql(@"User ID=postgres;Password=123;Host=localhost;Port=5432;Database=TelephoneBook;Pooling=true");
 
         }
         public DbSet<ContactInfo> ContactInfos;
@@ -31,6 +31,8 @@ namespace DataAccess.EntityFramework
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            
+
             #region ApplyEntiyConfiguration
             modelBuilder.ApplyConfiguration(new ContactInfoConfiguration());
             modelBuilder.ApplyConfiguration(new PersonConfiguration());
