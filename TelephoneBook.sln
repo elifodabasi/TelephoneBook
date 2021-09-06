@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entiti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{6918E652-A48C-44EE-9197-C353E095B464}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelephoneBookTests", "TelephoneBookTests\TelephoneBookTests.csproj", "{EA846CF1-BB87-49F6-8044-C6CCE1D731FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6918E652-A48C-44EE-9197-C353E095B464}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6918E652-A48C-44EE-9197-C353E095B464}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6918E652-A48C-44EE-9197-C353E095B464}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA846CF1-BB87-49F6-8044-C6CCE1D731FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA846CF1-BB87-49F6-8044-C6CCE1D731FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA846CF1-BB87-49F6-8044-C6CCE1D731FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA846CF1-BB87-49F6-8044-C6CCE1D731FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
